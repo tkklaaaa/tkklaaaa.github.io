@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>โปรไฟล์ของต้นกล้า</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      color: #333;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    img.profile-pic {
+      width: 150px;
+      border-radius: 50%;
+      border: 5px solid #4dabf7;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #0077b6;
+      margin-bottom: 10px;
+    }
+
+    p.bio {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .section h2 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #023e8a;
+      border-bottom: 2px solid #caf0f8;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "• ";
+      color: #0077b6;
+    }
+
+    .contacts a {
+      text-decoration: none;
+      color: #0077b6;
+      display: block;
+      margin: 5px 0;
+    }
+
+    .contacts a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="your-photo.jpg" alt="รูปต้นกล้า" class="profile-pic">
+    <h1>ต้นกล้า ชนประทาน</h1>
+    <p class="bio">นักศึกษาสาขาวิทยาการคอมพิวเตอร์ สนใจพัฒนาเว็บและระบบฐานข้อมูล</p>
+
+    <div class="section">
+      <h2>ทักษะ</h2>
+      <ul>
+        <li>HTML / CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>SQL และการออกแบบฐานข้อมูล</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>ผลงาน</h2>
+      <ul>
+        <li>ระบบจัดการนักเรียนด้วย Python + SQLite</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>ติดต่อ</h2>
+      <div class="contacts">
+        <a href="https://www.facebook.com/phacharaphol.kla/https://facebook.com/yourprofile" target="_blank">📘 Facebook</a>
+        <a href="https://github.com/tkklaaaa" target="_blank">🐙 GitHub</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
