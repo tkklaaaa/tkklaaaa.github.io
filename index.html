@@ -1,122 +1,207 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>โปรไฟล์</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
-      color: #333;
-      padding: 20px;
-    }
-
-    .container {
-      max-width: 700px;
-      margin: auto;
-      background: white;
-      border-radius: 20px;
-      padding: 30px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    img.profile-pic {
-      width: 150px;
-      border-radius: 50%;
-      border: 5px solid #4dabf7;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 2rem;
-      color: #0077b6;
-      margin-bottom: 10px;
-    }
-
-    p.bio {
-      font-size: 1.1rem;
-      margin-bottom: 20px;
-    }
-
-    .section {
-      text-align: left;
-      margin-top: 20px;
-    }
-
-    .section h2 {
-      font-size: 1.3rem;
-      margin-bottom: 10px;
-      color: #023e8a;
-      border-bottom: 2px solid #caf0f8;
-      padding-bottom: 5px;
-    }
-
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    ul li::before {
-      content: "• ";
-      color: #0077b6;
-    }
-
-    .contacts a {
-      text-decoration: none;
-      color: #0077b6;
-      display: block;
-      margin: 5px 0;
-    }
-
-    .contacts a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 20px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto; /* เว้นขอบ และจัดกลาง */
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        img.profile-pic {
+            width: 150px;
+            border-radius: 50%;
+            border: 1px solid #4dabf7;
+            margin-bottom: 20px;
+        }
+        img.pic {
+            width: 500px;
+            border-radius: 1%;
+            border: 1px solid #4dabf7;
+            margin-bottom: 5px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #58569e;
+            color: #fff;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #ccc;
+        }
+        section {
+            margin-bottom: 30px; /* เว้นระยะห่างระหว่างข้อ */
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #eee; /* เส้นใต้หัวข้อ */
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #555;
+        }
+        ul {
+            list-style-type: disc; /* หัวข้อย่อย */
+            padding-left: 20px;
+        }
+        .project {
+            margin-bottom: 20px;
+        }
+        .project h4 {
+            margin: 0 0 5px 0;
+            font-size: 1.2em;
+        }
+        a {
+            color: #007BFF; /* สีลิงก์ */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="container">
-    <img src="03_02.jpg" alt="รูปโปรไฟล์" class="profile-pic">
-    <h1>นายพชรพล ชนประทาน</h1>
-    <p class="bio">นักศึกษาสาขาวิทยาการคอมพิวเตอร์ สนใจพัฒนาเว็บและระบบฐานข้อมูล</p>
+    <header>
+        <h1>นายพชรพล ชนประทาน</h1>
+        <p>นักศึกษาสาขาวิทยาการคอมพิวเตอร์ สนใจพัฒนาเว็บและระบบฐานข้อมูล</p>
+    </header>
 
-    <div class="section">
-      <h2>ทักษะ</h2>
-      <ul>
-        <li>HTML / CSS</li>
-        <li>Python</li>
-      </ul>
-    </div>
+    <div class="container">
 
-    <div class="section">
-      <h2>ผลงาน</h2>
-      <ul>
-        <li>โปรแกรมSinCostanเรียนรู้ง่ายเพียงใช้มือ</li>
-      </ul>
-    </div>
+        <section id="intro">
+            <img src="03_02.jpg" alt="รูปโปรไฟล์" class="profile-pic">
+            <h2>1. แนะนำตัว (Introduction / Profile)</h2>
+            <p>
+                สวัสดีครับ ผม นายพชรพล นักศึกษาปี 2 คณะวิทยาศาสตร์ สาขาวิทยาการคอมพิวเตอร์ 
+                ปัจจุบันกำลังมุ่งเน้นการเรียนรู้ด้าน AI และ Data Science เพื่อพัฒนาทักษะในการวิเคราะห์ข้อมูลและการเขียนโปรแกรม
+            </p>
+        </section>
 
-    <div class="section">
-      <h2>ติดต่อ</h2>
-      <div class="contacts">
-        <a href="https://www.facebook.com/phacharaphol.kla" target="_blank">📘 Facebook</a>
-        <a href="https://github.com/tkklaaaa" target="_blank">🐙 GitHub</a>
-      </div>
-    </div>
-  </div>
+        <section id="skills">
+            <h2>2. ทักษะ (Skills)</h2>
+            
+            <h3>Programming</h3>
+            <ul>
+                <li>C</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>HTML/CSS</li>
+            </ul>
+
+            <h3>AI & Data</h3>
+            <ul>
+                <li>SQL</li>
+            </ul>
+
+            <h3>Tools</h3>
+            <ul>
+                <li>Git, GitHub</li>
+                <li>VS Code</li>
+                <li>Figma</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>3. ผลงานที่ผ่านมา (Projects / Portfolio)</h2>
+            
+            <div class="project">
+                <img src="RobloxRE.png" alt="Map Roblox" class="pic">
+                <h4>🤖 Roblox RE4 intro</h4>
+                <p>
+                    (คำอธิบาย) : โปรเจกต์ เกม Roblox ที 
+                </p>
+                </div>
+
+            </section>
+
+        <section id="education">
+            <h2>4. การศึกษา (Education)</h2>
+            <ul>
+                <li>
+                    <strong>อนุบาล-ประถมศึกษาตอนต้น</strong>: จบการศึกษาระดับประถมศึกษาตอนต้น
+                    จากโรงเรียนโรงเรียนธัมมสิริศึกษาสัตหีบ จังหวัดชลบุรี
+                </li>
+
+                <li>
+                    <strong>ประถมศึกษาตอนปลาย</strong>: จบการศึกษาระดับประถมศึกษาตอนปลาย
+                    จากโรงเรียนจุมพลโพนพิสัย จังหวัดหนองคาย
+                </li>
+
+                <li>
+                    <strong>มัธยมศึกษา</strong>: จบการศึกษาระดับมัธยมศึกษาตอนปลาย
+                    จากโรงเรียนชุมพลโพนพิสัย จังหวัดหนองคาย
+                </li>
+                
+                <li>
+                    <strong>ปัจจุบัน</strong>: ปริญญาตรี, คณะวิทยาศาสตร์ สาขาวิทยาการคอมพิวเตอร์,
+                    มหาวิทยาลัยราชภัฏอุดรธานี
+                </li>
+                </ul>
+        </section>
+
+        <section id="activities">
+            <h2>5. กิจกรรมและผลงานอื่นๆ (Activities / Achievements)</h2>
+            <ul>
+                <div class="project">
+                <img src="cert-b1-25oct2025_183.png" alt="Map Roblox" class="pic">
+                <h4>- ผ่านสอบวัดระดับภาษาอังกฤษ</h4>
+                
+                <div class="project">
+                <img src="CSITCamp2025.jpg" alt="Map Roblox" class="pic">
+                <h4>- วิทยากร CampCsit รร.สุวรรณคูหา</h4>
+
+                </div>
+                </ul>
+        </section>
+
+        <section id="contact">
+            <h2>6. ติดต่อ (Contact)</h2>
+            <ul>
+                <li><strong>Email</strong>: phacharaphol09052548@gmail.com</li>
+                <li><strong>GitHub</strong>: <a href="https://github.com/tkklaaaa" target="_blank">github.com/tkklaaaa</a></li>
+                <li><strong>Facebook</strong>: <a href="https://www.facebook.com/phacharaphol.kla" target="_blank">phacharaphol.kla</a></li>
+                <li><strong>ที่อยู่</strong>: 524/1 หมู่ 15 บ้านสามพร้าว ตำบลสามพร้าว อำเภอเมือง จังหวัดอุดรธานี 41000</li>
+            </ul>
+        </section>
+
+        <section id="career">
+            <h2>7. องค์ประกอบเสริม (Career Interest)</h2>
+            <p>
+                เป้าหมายในอนาคตของผมคือการได้ทำงานในตำแหน่ง Data Analyst หรือ Web Developer 
+                และสนใจหาประสบการณ์ฝึกงานที่เกี่ยวข้องกับ... (เขียนเป้าหมายของคุณ)
+            </p>
+        </section>
+
+    </div> <footer>
+        <p>&copy; 2025 นายพชรพล ชนประทาน</p>
+    </footer>
 
 </body>
 </html>
